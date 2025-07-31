@@ -10,6 +10,3 @@
     }
   ]
 }
-git add vercel.json
-git commit -m "chore: add vercel config"
-git push
