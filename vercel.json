@@ -1,15 +1,12 @@
-{ "rewrites": [ { "source": "/(.*)", "destination": "/" } ] }{
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "framework": "vite",
-  "cleanUrls": true,
-  "rewrites": [
+{
+  "version": 2,
+  "builds": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "index.html",
+      "use": "@vercel/static"
     }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
-git add vercel.json
-git commit -m "chore: add vercel config"
-git push
